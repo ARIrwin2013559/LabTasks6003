@@ -2,6 +2,7 @@ package com.example.lab4task;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatSpinner;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -37,10 +38,10 @@ public class login extends AppCompatActivity {
                 String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
 
-                if (TestUtils.isEmpty(email)){
-                    mEmail.setError("An Email address is required!");
-                    return;
-                }
+                //if (TestUtils.isEmpty(email)){
+                //    mEmail.setError("An Email address is required!");
+                //    return;
+                //}
 
                 // Authenticate User
                 fAuth.signInWithEmailAndPassword(email,
