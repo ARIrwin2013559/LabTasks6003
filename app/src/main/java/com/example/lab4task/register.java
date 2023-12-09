@@ -55,5 +55,7 @@ public class register extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), login.class));
             }
         });
+
+
     }
 }
